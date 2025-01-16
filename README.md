@@ -1,2 +1,2 @@
 # Jogo_da_Velha_JQuery
-Jogo da velha muito simples, utilizando a biblioteca do JavaScript "JQuery", feito para ser jogado com 2 jogadores, ainda não desenvolvido capacidade de jogar contra a máquina.
+O foi desenvolvido a partir de um curso de desenvolvimento web na Udemy, o jogo da velha, foi feito utilizando a biblioteca do JavaScript "JQuery", para ser jogado com 2 jogadores.
