@@ -2,15 +2,26 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-
-		<title>Jogo da velha</title>
-		<script src="jquery-2.2.1.js"></script>
-		<script src="jogo.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" /><!-- Separar css do html futuramente -->
+		<title>Jogo da Velha</title>
 	</head>
 
 	<body>
 
-		<div id="pagina_inicial" align="center">
+		<!-- Seleção do modo de jogo -->
+		<div id="selecao_modo" align="center">
+			<h1>Escolha o Modo de Jogo</h1>
+			<select id="modo_jogo">
+				<option value="2jogadores">2 Jogadores</option>
+				<option value="maquina">Contra a Máquina</option>
+			</select>
+			<br><br>
+			<button id="btn_iniciar_modo">Iniciar Jogo</button>
+		</div>
+
+		<!-- Tela inicial do jogo -->
+		<div id="pagina_inicial" align="center" style="display:none;">
 			<table border="0" width="600px;">
 				<tbody>
 					<tr>
@@ -19,27 +30,27 @@
 
 					<tr>
 						<td align="center">
-							<img src="imagens/jogador_1.png" />
+							<img src="images/jogador_1.png" />
 							<br />
 							<input id="entrada_apelido_jogador_1" type="text" maxlength="10" placeholder="Apelido jogador 1" style="border: 0px;" />
 						</td>
 						<td align="center">
-							<img id="btn_iniciar_jogo" src="imagens/iniciar.png" />
+							<img id="btn_iniciar_jogo" src="images/iniciar.png" />
 						</td>
 						<td align="center">
-							<img src="imagens/jogador_2.png" />
+							<img src="images/jogador_2.png" />
 							<br />
 							<input id="entrada_apelido_jogador_2" type="text" maxlength="10" placeholder="Apelido jogador 2" style="border: 0px;" />
 						</td>
 					</tr>
 				</table>
 			</table>
-
 		</div>
 
+		<!-- Tabuleiro do jogo -->
 		<div id="palco_jogo" style="display:none; margin-top:50px; text-align:center">
 			<div style="display:inline-block;">
-				<img src="imagens/jogador_1.png" />
+				<img src="images/jogador_1.png" />
 				<br />
 				<span id="nome_jogador_1"></span>
 			</div>
@@ -83,11 +94,18 @@
 			</div>
 
 			<div style="display:inline-block;">
-				<img src="imagens/jogador_2.png" />
+				<img src="images/jogador_2.png" />
 				<br />
 				<span id="nome_jogador_2"></span>
 			</div>
 		</div>
+
+
+		<script src="./js/jquery-2.2.1.js"></script>
+		<script src="./js/jogo.js"></script>
+		<script src="./js/jogo_maquina.js"></script>
+		<script src="./js/selecao_modo.js"></script>
+
 
 	</body>
 </html>
