@@ -45,7 +45,7 @@ $(document).ready( function(){
 	$('.jogada').click( function(){
 
 		var id_campo_clicado = this.id;
-		$("#"+id_campo_clicado).off();
+		$('#'+id_campo_clicado).off();
 		jogada(id_campo_clicado);
 	});
 
@@ -54,10 +54,10 @@ $(document).ready( function(){
 		var ponto = 0;
 
 		if((rodada % 2) == 1){
-			icone = 'url("imagens/marcacao_1.png")';
+			icone = 'url("")';
 			ponto = -1;
 		} else {
-			icone = 'url("imagens/marcacao_2.png")';
+			icone = 'url("")';
 			ponto = 1;
 		}
 		

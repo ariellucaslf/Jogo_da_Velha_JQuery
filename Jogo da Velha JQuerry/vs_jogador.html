@@ -4,8 +4,7 @@
 		<meta charset="UTF-8">
 
 		<title>Jogo da velha</title>
-		<script src="jquery-2.2.1.js"></script>
-		<script src="js/vs_player.js"></script>
+		
 	</head>
 
 	<body>
@@ -19,15 +18,15 @@
 
 					<tr>
 						<td align="center">
-							<img src="imagens/jogador_1.png" />
+							<img src="" />
 							<br />
 							<input id="entrada_apelido_jogador_1" type="text" maxlength="10" placeholder="Apelido jogador 1" style="border: 0px;" />
 						</td>
 						<td align="center">
-							<img id="btn_iniciar_jogo" src="imagens/iniciar.png" />
+							<img id="btn_iniciar_jogo" src="" />
 						</td>
 						<td align="center">
-							<img src="imagens/jogador_2.png" />
+							<img src="" />
 							<br />
 							<input id="entrada_apelido_jogador_2" type="text" maxlength="10" placeholder="Apelido jogador 2" style="border: 0px;" />
 						</td>
@@ -39,7 +38,7 @@
 
 		<div id="palco_jogo" style="display:none; margin-top:50px; text-align:center">
 			<div style="display:inline-block;">
-				<img src="imagens/jogador_1.png" />
+				<img src="" />
 				<br />
 				<span id="nome_jogador_1"></span>
 			</div>
@@ -83,11 +82,14 @@
 			</div>
 
 			<div style="display:inline-block;">
-				<img src="imagens/jogador_2.png" />
+				<img src="" />
 				<br />
 				<span id="nome_jogador_2"></span>
 			</div>
 		</div>
+
+		<script src="js/jquery-2.2.1.js"></script>
+		<script src="/js/vs_jogador.js"></script>
 
 	</body>
 </html>
